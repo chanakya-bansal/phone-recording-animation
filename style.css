@@ -1,0 +1,257 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    text-align:center;
+
+}
+
+
+
+#video-button-2{
+    transform-origin: 924.692px 374.346px;
+    animation: press 0.25s  ;
+    animation-delay: 1s;
+}
+
+#tree-3{
+  
+    animation: sway 1s ease-in-out alternate infinite;
+    
+}
+
+#tree-2{
+    animation: sway 1s ease-in-out alternate infinite;
+    animation-delay: -0.5s;
+}
+
+#tree-1{
+    animation: sway 1s ease-in-out alternate infinite;
+    animation-delay: -1s;
+}
+
+#girl-head{
+    transform-origin:center;
+    transform-box: fill-box;
+
+    animation: head-tilt 3s alternate infinite;
+}
+
+#man-body{
+    animation: move-forward 6.5s linear infinite;
+    animation-delay: 1s;
+}
+
+#man-leg-back{
+    transform-origin:top;
+    transform-box: fill-box;
+    animation: leg1 1.25s infinite ease-in-out;
+    animation-delay: 1s;
+}
+
+#man-leg-front{
+    transform-origin:top;
+    transform-box: fill-box;
+    animation: leg2 1.25s infinite ease-in-out;
+    animation-delay: 1s;
+}
+
+#legs{
+    animation: move-forward 6.5s linear infinite;
+    animation-delay: 1s;
+}
+
+#man-arm-front{
+    animation: move-forward 6.5s linear infinite;
+    animation-delay: 1s;
+}
+
+#man-arm-back{
+    animation: move-forward 6.5s linear infinite;
+    animation-delay: 1s;
+}
+
+#leash{
+    animation: move-forward 6.5s linear infinite;
+    animation-delay: 1s;
+}
+
+#dog-head{
+    animation: move-forward 6.5s linear infinite;
+    animation-delay: 1s;
+}
+
+#dog-body{
+    animation: move-forward 6.5s linear infinite;
+    animation-delay: 1s;
+}
+
+#dog-tail{
+    animation: move-forward 6.5s linear infinite;
+    animation-delay: 1s;
+}
+
+#dog-legs-front-1{
+    transform-origin:top;
+    transform-box: fill-box;
+    animation: dog-leg1 1.25s infinite;
+    animation-delay: 1s;
+}
+#dog-legs-front-2{
+    transform-origin:top;
+    transform-box: fill-box;
+    animation: dog-leg1 1.25s infinite;
+    animation-delay: 1s;
+}
+
+#dog-legs-behind-1{
+    transform-origin:top;
+    transform-box: fill-box;
+    animation: dog-leg2 1.05s infinite;
+    animation-delay: 1s;
+}
+
+#dog-legs-behind-2{
+    transform-origin:top;
+    transform-box: fill-box;
+    animation: dog-leg2 1.05s infinite;
+    animation-delay: 1s;
+}
+
+#dog-legs{
+    animation: move-forward 6.5s linear infinite;
+    animation-delay: 1s;
+}
+
+#dog-head{
+    transform-origin:top;
+    transform-box: fill-box;
+    animation: head-tilt 1.5s infinite;
+}
+
+#blur{
+   
+animation: start 1s;
+animation-delay: 1s;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@keyframes start{
+    0%{
+        filter: blur(0px);
+    }
+    50%{
+        filter: blur(5px);
+
+    }
+    100%{
+        filter: blur(0px);
+
+    }
+}
+
+@keyframes dog-leg2{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(40deg);
+
+    }
+    100%{
+        transform: rotate(0deg);
+
+    }
+}
+
+@keyframes dog-leg1{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-40deg);
+
+    }
+    100%{
+        transform: rotate(0deg);
+
+    }
+}
+
+@keyframes leg1{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-40deg);
+
+    }
+    100%{
+        transform: rotate(0deg);
+
+    }
+}
+
+@keyframes leg2{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(40deg);
+
+    }
+    100%{
+        transform: rotate(0deg);
+
+    }
+}
+
+@keyframes move-forward{
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(400px);
+    }
+}
+
+@keyframes head-tilt{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    33%{
+        transform: rotateZ(15deg);
+    }
+    66%{
+        transform: rotateZ(-15deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes sway{
+    from{
+        transform: translate(0px,5px);
+    }
+    to{
+        transform: translate(0px,-20px);
+    }
+}
+
+@keyframes press{
+    from{
+        transform: scale(1,1);
+        filter: brightness(100%);
+    }
+    to{
+        transform: scale(0.95,0.95);
+        filter: brightness(50%);
+    }
+}
